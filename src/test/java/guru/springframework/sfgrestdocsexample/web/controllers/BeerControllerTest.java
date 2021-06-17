@@ -78,7 +78,7 @@ class BeerControllerTest {
                .andExpect(status().isCreated())
                .andDo(
                    document(
-                       V1_BEER,
+                       V1_BEER + "-create",
                        requestFields(
                            fields.withPath("id").ignored(), fieldWithPath("version").ignored(),
                            fields.withPath("createdDate").ignored(),
@@ -105,7 +105,7 @@ class BeerControllerTest {
                .andExpect(status().isOk())
                .andDo(
                    document(
-                       V1_BEER,
+                       V1_BEER + "-show",
                        pathParameters(
                            parameterWithName("id").description("UUID of desired beer to get.")
                        ),
@@ -140,7 +140,7 @@ class BeerControllerTest {
                .andExpect(status().isNoContent())
                .andDo(
                    document(
-                       V1_BEER,
+                       V1_BEER + "-update",
                        pathParameters(
                            parameterWithName("id").description("UUID of desired beer to update.")
                        )

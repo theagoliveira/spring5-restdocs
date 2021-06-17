@@ -6,24 +6,106 @@ John Thompson;
 
 Sample application demonstrating how to use Spring REST Docs with JUnit 5.
 
-`BeerOrderControllerTest` makes a call to a very simple service and produces three
+`BeerControllerTest` makes a call to a very simple service and produces three
 documentation snippets.
+
+
+SHOW BEER
 
 One showing how to make a request using cURL:
 
-include::{snippets}/orders/curl-request.adoc[]
+include::{snippets}/v1/beer-show/curl-request.adoc[]
+
+One showing how to make a request using httpie:
+
+include::{snippets}/v1/beer-show/httpie-request.adoc[]
 
 One showing the HTTP request:
 
-include::{snippets}/orders/http-request.adoc[]
+include::{snippets}/v1/beer-show/http-request.adoc[]
 
 And one showing the HTTP response:
 
-include::{snippets}/orders/http-response.adoc[]
+include::{snippets}/v1/beer-show/http-response.adoc[]
+
+Request Body:
+
+include::{snippets}/v1/beer-show/request-body.adoc[]
+
+Request Parameters:
+
+include::{snippets}/v1/beer-show/request-parameters.adoc[]
+
+Path Parameters:
+
+include::{snippets}/v1/beer-show/path-parameters.adoc[]
 
 Response Body:
-include::{snippets}/orders/response-body.adoc[]
 
+include::{snippets}/v1/beer-show/response-body.adoc[]
 
 Response Fields:
-include::{snippets}/orders/response-fields.adoc[]
+
+include::{snippets}/v1/beer-show/response-fields.adoc[]
+
+
+CREATE BEER
+
+One showing how to make a request using cURL:
+
+include::{snippets}/v1/beer-create/curl-request.adoc[]
+
+One showing how to make a request using httpie:
+
+include::{snippets}/v1/beer-create/httpie-request.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}/v1/beer-create/http-request.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}/v1/beer-create/http-response.adoc[]
+
+Request Body:
+
+include::{snippets}/v1/beer-create/request-body.adoc[]
+
+Request Fields:
+
+include::{snippets}/v1/beer-create/request-fields.adoc[]
+
+Response Body:
+
+include::{snippets}/v1/beer-create/response-body.adoc[]
+
+
+UPDATE BEER
+
+One showing how to make a request using cURL:
+
+include::{snippets}/v1/beer-update/curl-request.adoc[]
+
+One showing how to make a request using httpie:
+
+include::{snippets}/v1/beer-update/httpie-request.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}/v1/beer-update/http-request.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}/v1/beer-update/http-response.adoc[]
+
+Request Body:
+
+include::{snippets}/v1/beer-update/request-body.adoc[]
+
+Path Parameters:
+
+include::{snippets}/v1/beer-update/path-parameters.adoc[]
+
+Response Body:
+
+include::{snippets}/v1/beer-update/response-body.adoc[]
