@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-SfgRestdocsExampleApplication<sfg-restdocs-example>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "guru.springframework.sfgrestdocsexample.SfgRestdocsExampleApplication",
+      "projectName": "sfg-restdocs-example",
+      "args": ""
+    }
+  ]
+}
