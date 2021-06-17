@@ -8,6 +8,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,6 +34,7 @@ public class BeerDTO {
     private OffsetDateTime lastModifiedDate;
 
     @NotBlank
+    @Size(min = 3, max = 100)
     private String beerName;
 
     @NotNull
@@ -46,7 +48,7 @@ public class BeerDTO {
     @NotNull
     private BigDecimal price;
 
-    private Integer minOnHand;
-    private Integer quantityToBrew;
+    @Positive
+    private Integer quantityOnHand;
 
 }

@@ -12,7 +12,12 @@
     "org.mockito.BDDMockito.*",
     "org.mockito.ArgumentMatchers.*",
     "org.mockito.Answers.*",
-    "org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*",
+    "org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*",
+    "org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.*",
+    "org.springframework.restdocs.request.RequestDocumentation.*",
+    "org.springframework.restdocs.payload.PayloadDocumentation.*",
+    "org.springframework.restdocs.snippet.AbstractDescriptor.*",
+    "org.springframework.restdocs.snippet.Attributes.*",
     "org.springframework.test.web.servlet.result.MockMvcResultMatchers.*",
     "org.hamcrest.Matchers.*"
   ],
