@@ -10,6 +10,36 @@ Sample application demonstrating how to use Spring REST Docs with JUnit 5.
 documentation snippets.
 
 
+BEER INDEX
+
+One showing how to make a request using cURL:
+
+include::{snippets}/v1/beer-index/curl-request.adoc[]
+
+One showing how to make a request using httpie:
+
+include::{snippets}/v1/beer-index/httpie-request.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}/v1/beer-index/http-request.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}/v1/beer-index/http-response.adoc[]
+
+Request Body:
+
+include::{snippets}/v1/beer-index/request-body.adoc[]
+
+Response Body:
+
+include::{snippets}/v1/beer-index/response-body.adoc[]
+
+Response Fields:
+
+include::{snippets}/v1/beer-index/response-fields.adoc[]
+
 SHOW BEER
 
 One showing how to make a request using cURL:

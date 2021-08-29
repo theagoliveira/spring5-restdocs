@@ -9,6 +9,7 @@ import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuild
 import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
 import static org.springframework.restdocs.payload.PayloadDocumentation.requestFields;
 import static org.springframework.restdocs.payload.PayloadDocumentation.responseFields;
+import static org.springframework.restdocs.payload.PayloadDocumentation.subsectionWithPath;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
 import static org.springframework.restdocs.request.RequestDocumentation.pathParameters;
 import static org.springframework.restdocs.request.RequestDocumentation.requestParameters;
@@ -16,6 +17,8 @@ import static org.springframework.restdocs.snippet.Attributes.key;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -47,6 +50,7 @@ import guru.springframework.sfgrestdocsexample.web.model.BeerStyleEnum;
 class BeerControllerTest {
 
     private static final String V1_BEER = "v1/beer";
+    private List<Beer> BEERS = Arrays.asList(Beer.builder().build(), Beer.builder().build());
 
     @Autowired
     MockMvc mockMvc;
@@ -88,6 +92,31 @@ class BeerControllerTest {
                            fields.withPath("upc").description("Beer UPC.").attributes(),
                            fields.withPath("price").description("Beer price."),
                            fields.withPath("quantityOnHand").ignored()
+                       )
+                   )
+               );
+    }
+
+    @Test
+    void testIndex() throws Exception {
+        given(beerRepository.findAll()).willReturn(BEERS);
+
+        mockMvc.perform(get(BeerController.BASE_URI).accept(MediaType.APPLICATION_JSON))
+               .andExpect(status().isOk())
+               .andDo(
+                   document(
+                       V1_BEER + "-index",
+                       responseFields(
+                           subsectionWithPath("[]").description("An array of beers"),
+                           fieldWithPath("[].id").description("Beer id."),
+                           fieldWithPath("[].version").description("Version number."),
+                           fieldWithPath("[].createdDate").description("Creation date."),
+                           fieldWithPath("[].lastModifiedDate").description("Update date."),
+                           fieldWithPath("[].beerName").description("Beer name."),
+                           fieldWithPath("[].beerStyle").description("Beer style."),
+                           fieldWithPath("[].upc").description("Beer UPC."),
+                           fieldWithPath("[].price").description("Beer price."),
+                           fieldWithPath("[].quantityOnHand").description("Quantity on hand.")
                        )
                    )
                );

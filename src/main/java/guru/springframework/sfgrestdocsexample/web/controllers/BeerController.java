@@ -1,6 +1,8 @@
 package guru.springframework.sfgrestdocsexample.web.controllers;
 
+import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
@@ -29,6 +31,14 @@ public class BeerController {
     public BeerController(BeerMapper beerMapper, BeerRepository beerRepository) {
         this.beerMapper = beerMapper;
         this.beerRepository = beerRepository;
+    }
+
+    @GetMapping
+    public List<BeerDTO> index() {
+        return beerRepository.findAll()
+                             .stream()
+                             .map(beerMapper::BeerToBeerDTO)
+                             .collect(Collectors.toList());
     }
 
     @GetMapping("/{id}")
