@@ -1,0 +1,19 @@
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+
+logging:
+  level:
+    '[guru.springframework]': debug
+
+bucket4j:
+  enabled: true
+  filters:
+  - cache-name: buckets
+    url: .*
+    rate-limits:
+    - bandwidths:
+      - capacity: 5
+        time: 10
+        unit: seconds

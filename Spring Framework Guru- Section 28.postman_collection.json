@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "12a866a5-9e8d-4b7e-b3e5-51ea2e083e93",
+		"name": "Spring Framework Guru: Section 28",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Beers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/beers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Beer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/beers/93a9ad0a-ec18-4bca-ac8d-6f176bbcd905",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"beers",
+						"93a9ad0a-ec18-4bca-ac8d-6f176bbcd905"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Beer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"beerName\": \"Skol\",\n    \"beerStyle\": \"PILSNER\",\n    \"upc\": 123456789,\n    \"price\": 2.95,\n    \"quantityOnHand\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/beers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Beer (Update)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"beerName\": \"Skol Hops\",\n    \"beerStyle\": \"PILSNER\",\n    \"upc\": 123456789,\n    \"price\": 3.95,\n    \"quantityOnHand\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/beers/c270981d-5a6f-494a-99e3-5a636b571103",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"beers",
+						"c270981d-5a6f-494a-99e3-5a636b571103"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
