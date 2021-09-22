@@ -237,8 +237,8 @@
               <attributes>
                 <snippets>
                     ${project.build.directory}/generated-snippets
-                </snippets>
-            </attributes>
+</snippets>
+              </attributes>
             </configuration>
           </execution>
         </executions>
@@ -278,7 +278,7 @@
         <version>3.0.3</version>
         <configuration>
           <processTypes>
-            <web>java -Dserver.port=$PORT $JAVA_OPTS -cp target/classes:target/dependency/* guru.springframework.sfgrestdocsexample SfgRestdocsExampleApplication</web>
+            <web>java -Dserver.port=$PORT -jar target/sfg-restdocs-example-0.0.1-SNAPSHOT.jar</web>
           </processTypes>
           <jdkVersion>11</jdkVersion>
         </configuration>
