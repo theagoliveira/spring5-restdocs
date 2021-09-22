@@ -56,4 +56,4 @@ The API documentation can be found [here](https://limitless-oasis-36660.herokuap
 
 ## Deployment
 
-App deployed on [Heroku](https://limitless-oasis-36660.herokuapp.com/)
+API deployed on [Heroku](https://limitless-oasis-36660.herokuapp.com/)
