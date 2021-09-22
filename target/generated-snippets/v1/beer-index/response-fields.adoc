@@ -1,0 +1,44 @@
+|===
+|Path|Type|Description
+
+|`+[]+`
+|`+Array+`
+|An array of beers
+
+|`+[].id+`
+|`+Null+`
+|Beer id.
+
+|`+[].version+`
+|`+Null+`
+|Version number.
+
+|`+[].createdDate+`
+|`+Null+`
+|Creation date.
+
+|`+[].lastModifiedDate+`
+|`+Null+`
+|Update date.
+
+|`+[].beerName+`
+|`+Null+`
+|Beer name.
+
+|`+[].beerStyle+`
+|`+Null+`
+|Beer style.
+
+|`+[].upc+`
+|`+Null+`
+|Beer UPC.
+
+|`+[].price+`
+|`+Null+`
+|Beer price.
+
+|`+[].quantityOnHand+`
+|`+Null+`
+|Quantity on hand.
+
+|===

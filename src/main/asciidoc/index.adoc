@@ -14,128 +14,128 @@ BEER INDEX
 
 One showing how to make a request using cURL:
 
-include::target/generated-snippets/v1/beer-index/curl-request.adoc[]
+include::{snippets}/v1/beer-index/curl-request.adoc[]
 
 One showing how to make a request using httpie:
 
-include::target/generated-snippets/v1/beer-index/httpie-request.adoc[]
+include::{snippets}/v1/beer-index/httpie-request.adoc[]
 
 One showing the HTTP request:
 
-include::target/generated-snippets/v1/beer-index/http-request.adoc[]
+include::{snippets}/v1/beer-index/http-request.adoc[]
 
 And one showing the HTTP response:
 
-include::target/generated-snippets/v1/beer-index/http-response.adoc[]
+include::{snippets}/v1/beer-index/http-response.adoc[]
 
 Request Body:
 
-include::target/generated-snippets/v1/beer-index/request-body.adoc[]
+include::{snippets}/v1/beer-index/request-body.adoc[]
 
 Response Body:
 
-include::target/generated-snippets/v1/beer-index/response-body.adoc[]
+include::{snippets}/v1/beer-index/response-body.adoc[]
 
 Response Fields:
 
-include::target/generated-snippets/v1/beer-index/response-fields.adoc[]
+include::{snippets}/v1/beer-index/response-fields.adoc[]
 
 SHOW BEER
 
 One showing how to make a request using cURL:
 
-include::target/generated-snippets/v1/beer-show/curl-request.adoc[]
+include::{snippets}/v1/beer-show/curl-request.adoc[]
 
 One showing how to make a request using httpie:
 
-include::target/generated-snippets/v1/beer-show/httpie-request.adoc[]
+include::{snippets}/v1/beer-show/httpie-request.adoc[]
 
 One showing the HTTP request:
 
-include::target/generated-snippets/v1/beer-show/http-request.adoc[]
+include::{snippets}/v1/beer-show/http-request.adoc[]
 
 And one showing the HTTP response:
 
-include::target/generated-snippets/v1/beer-show/http-response.adoc[]
+include::{snippets}/v1/beer-show/http-response.adoc[]
 
 Request Body:
 
-include::target/generated-snippets/v1/beer-show/request-body.adoc[]
+include::{snippets}/v1/beer-show/request-body.adoc[]
 
 Request Parameters:
 
-include::target/generated-snippets/v1/beer-show/request-parameters.adoc[]
+include::{snippets}/v1/beer-show/request-parameters.adoc[]
 
 Path Parameters:
 
-include::target/generated-snippets/v1/beer-show/path-parameters.adoc[]
+include::{snippets}/v1/beer-show/path-parameters.adoc[]
 
 Response Body:
 
-include::target/generated-snippets/v1/beer-show/response-body.adoc[]
+include::{snippets}/v1/beer-show/response-body.adoc[]
 
 Response Fields:
 
-include::target/generated-snippets/v1/beer-show/response-fields.adoc[]
+include::{snippets}/v1/beer-show/response-fields.adoc[]
 
 
 CREATE BEER
 
 One showing how to make a request using cURL:
 
-include::target/generated-snippets/v1/beer-create/curl-request.adoc[]
+include::{snippets}/v1/beer-create/curl-request.adoc[]
 
 One showing how to make a request using httpie:
 
-include::target/generated-snippets/v1/beer-create/httpie-request.adoc[]
+include::{snippets}/v1/beer-create/httpie-request.adoc[]
 
 One showing the HTTP request:
 
-include::target/generated-snippets/v1/beer-create/http-request.adoc[]
+include::{snippets}/v1/beer-create/http-request.adoc[]
 
 And one showing the HTTP response:
 
-include::target/generated-snippets/v1/beer-create/http-response.adoc[]
+include::{snippets}/v1/beer-create/http-response.adoc[]
 
 Request Body:
 
-include::target/generated-snippets/v1/beer-create/request-body.adoc[]
+include::{snippets}/v1/beer-create/request-body.adoc[]
 
 Request Fields:
 
-include::target/generated-snippets/v1/beer-create/request-fields.adoc[]
+include::{snippets}/v1/beer-create/request-fields.adoc[]
 
 Response Body:
 
-include::target/generated-snippets/v1/beer-create/response-body.adoc[]
+include::{snippets}/v1/beer-create/response-body.adoc[]
 
 
 UPDATE BEER
 
 One showing how to make a request using cURL:
 
-include::target/generated-snippets/v1/beer-update/curl-request.adoc[]
+include::{snippets}/v1/beer-update/curl-request.adoc[]
 
 One showing how to make a request using httpie:
 
-include::target/generated-snippets/v1/beer-update/httpie-request.adoc[]
+include::{snippets}/v1/beer-update/httpie-request.adoc[]
 
 One showing the HTTP request:
 
-include::target/generated-snippets/v1/beer-update/http-request.adoc[]
+include::{snippets}/v1/beer-update/http-request.adoc[]
 
 And one showing the HTTP response:
 
-include::target/generated-snippets/v1/beer-update/http-response.adoc[]
+include::{snippets}/v1/beer-update/http-response.adoc[]
 
 Request Body:
 
-include::target/generated-snippets/v1/beer-update/request-body.adoc[]
+include::{snippets}/v1/beer-update/request-body.adoc[]
 
 Path Parameters:
 
-include::target/generated-snippets/v1/beer-update/path-parameters.adoc[]
+include::{snippets}/v1/beer-update/path-parameters.adoc[]
 
 Response Body:
 
-include::target/generated-snippets/v1/beer-update/response-body.adoc[]
+include::{snippets}/v1/beer-update/response-body.adoc[]
